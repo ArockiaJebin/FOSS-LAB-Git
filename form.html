@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="form.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<div class="box">
+
+    <img src="user.png" class="user">
+</div>
+<div class="login-form">
+    <div class="form-title">
+        Member Login
+    </div>
+    <div class="form-input">
+        <label for="username">Username</label>
+        <input type="text" id="username"placeholder="Enter User Name"required="">
+    </div>
+    <div class="form-input">
+        <label for="password">Password</label>
+        <input type="password" id="password"placeholder="Enter Password"required="">
+    </div>
+    <div class="captcha">
+        <label for="captcha-input">Enter Captcha</label>
+        <div class="preview"></div>
+        <div class="captcha-form">
+           <input type="text" id="captcha-form" placeholder="Enter captcha text"required="">
+           <button class="captcha-refresh">
+               <i class="fa fa-refresh"></i>
+           </button> 
+        </div>
+    </div>
+    <div class="form_input">
+        <button id="login-btn">Login</button>
+    </div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
